@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
-import Card from '../components/Card.jsx';
-import AddTask from '../components/AddTask.jsx';
+import Card from './components/Card.jsx';
+import AddTask from './components/AddTask.jsx';
+import Overlay from './components/Overlay.jsx';
 import './App.css'
 
 function App() {
@@ -26,9 +27,9 @@ function App() {
   }
 
   return (
-    <>
-    <h1>TODO APP</h1>
-    <div>
+    <div className="app-container">
+    <h1 className="app-name">TODO APP</h1>
+    <div className="cards-container">
     {tasks.map(
       (task, i) => {
         return (
@@ -37,9 +38,10 @@ function App() {
       }
     )}
     </div>
-    <button onClick={toggleShown}>ADD</button>
+    <button className="add-button" onClick={toggleShown}>+</button>
+    {shown && <Overlay/>}
     {shown && <AddTask toggleShown={toggleShown} createTask={createTask} />}
-    </>
+    </div>
   )
 }
 
