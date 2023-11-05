@@ -43,3 +43,9 @@
     grid-template-columns: 1fr 1fr;
     margin: 1.5em 0
 }
+
+@media screen and (max-width: 800px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+}

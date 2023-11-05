@@ -5,7 +5,7 @@ export default function Card(props) {
     <div className="card">
       <h2 className="card-title" >{props.title}</h2>
       <p className="card-description">{props.description}</p>
-      <a className="card-remove" onClick={()=>{props.removeTask(props.id)}}>Remove</a>
+      <a className="card-remove" onClick={()=>{props.removeTask(props.id)}}>-</a>
     </div>
   )
 } 
