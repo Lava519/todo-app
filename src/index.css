@@ -8,12 +8,20 @@
   font-weight: 400;
 
 
+
+/*
   --night: #0A0F0D;
   --red: #ee4266;
   --violet: #2a1e5c;
   --silver: #c4cbca;
   --verdigris: #3cbbb1;
-
+*/
+  --night: #04151F;
+  --red: #C44900;
+  --violet: #183A37;
+  --silver: #EFD6AC;
+  --verdigris: #3cbbb1;
+  
   color: var(--silver);
   background-color: var(--night);
 

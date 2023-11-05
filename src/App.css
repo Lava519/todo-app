@@ -34,3 +34,12 @@
     font-weight: 700;
     cursor: pointer;
 }
+
+.cards-container {
+    width: 80%;
+    min-width: 250px;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 1fr 1fr;
+    margin: 1.5em 0
+}
