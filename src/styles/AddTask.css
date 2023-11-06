@@ -17,6 +17,8 @@
     background-color: var(--violet);
     border-radius: 0.5em;
     overflow: hidden;
+    animation-name: pop-in;
+    animation-duration: 0.5s;
 }
 
 .title-label {
@@ -71,4 +73,14 @@
 
 #description {
     resize: none;
+}
+
+@keyframes pop-in {
+    0% {
+        scale: 0;
+    }
+
+    100% {
+        scale: 1;
+    }
 }
